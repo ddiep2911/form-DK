@@ -23,7 +23,7 @@ function checkError() {
     const btn = document.getElementById("btn")
 
     // check regex 
-    const regexName = /^(.?[a-zA-Z0-9\s])+$/
+    const regexName = /^(.?[a-zA-Z0-9\s]){2,}$/
     const regexEmail = /^\w+@[a-zA-Z0-9]+\.+com+$/;
     const regexPassWord = /^(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,32}$/
 
