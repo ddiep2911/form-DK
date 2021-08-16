@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <form action="" id="form">
+        <div class="form">
+            <div class="form-group hoTen">
+                <label for="hoTen">Họ tên: </label>
+                <input type="text" name="hoTen" id="hoTen" placeholder="Họ tên" onkeyup="checkError()" maxlength="20">
+                <p id="username_error">Bắt buộc*</p>
+            </div>
+
+            <div class="form-group email">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Email" onkeyup="checkError()">
+                <p id="email_error">Bắt buộc*</p>
+            </div>
+
+            <div class="form-group matKhau">
+                <label for="matKhau">Mật khẩu: </label>
+                <input type="password" name="matKhau" id="matKhau" placeholder="Mật khẩu" onkeyup="checkError()">
+                <p id="password_error">Bắt buộc*</p>
+            </div>
+
+            <div class="form-group xacNhanMatKhau">
+                <label for="xacNhanMatKhau">Xác nhận mật khẩu: </label>
+                <input type="password" name="xacNhanMatKhau" id="xacNhanMatKhau" placeholder="Xác nhận mật khẩu"
+                    onkeyup="checkError()">
+                <p id="repassword_error">Bắt buộc*</p>
+            </div>
+
+            <button type="submit" id="btn" disabled>Đăng ký</button>
+        </div>
+
+        <div id="popup">
+        </div>
+    </form>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

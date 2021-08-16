@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#form {
+  width: 100%;
+}
+
+#form .form {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#form .form .form-group {
+  padding: 10px 0;
+  text-align: left;
+}
+
+#form .form .form-group label {
+  font-size: 18px;
+  padding-right: 40px;
+  display: block;
+  color: black;
+}
+
+#form .form .form-group input {
+  outline: none;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+#form .form .form-group p {
+  padding-top: 10px;
+  color: red;
+}
+
+#form .form button {
+  margin-top: 25px;
+  padding: 13px 23px;
+  background-color: green;
+  font-size: 17px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
