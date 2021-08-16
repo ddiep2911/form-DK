@@ -1,5 +1,5 @@
 function getValue(id) {
-    return document.getElementById(id).value.trim();
+    return document.getElementById(id).value;
 }
 
 function showError(key, mess) {
@@ -8,6 +8,7 @@ function showError(key, mess) {
 
 document.getElementById("btn").addEventListener('click', (e) => {
     e.preventDefault()
+
     alert("Đăng ký thành công")
 
     resetFrom()
@@ -61,9 +62,12 @@ function checkError() {
         showError("repassword", "")
     }
 
-    if (userName && email && passWord && rePassWOrd === passWord) {
+    if (userName && regexName.test(userName) && email && regexEmail.test(email) && passWord && rePassWOrd === passWord) {
         btn.disabled = false
+    } else {
+        btn.disabled = true
     }
+
 }
 
 function resetFrom() {
